@@ -1,5 +1,7 @@
 # nix-cabal
 
+![nix-logo](https://user-images.githubusercontent.com/4061728/48418536-978bc480-e766-11e8-9206-44292ea5e0f1.png) ![cabal-logo](https://user-images.githubusercontent.com/4061728/48418551-a07c9600-e766-11e8-9b47-a6497986936d.png)
+
 This is a small wrapper script to run `cabal` inside `nix-shell`. It assumes
 `shell.nix` to be present in the current directory.
 
