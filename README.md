@@ -20,7 +20,7 @@ Make sure this location is in your `$PATH`.
 ## Usage
 
 ```bash
-nix-cabal new-build all
+nix-cabal v2-build all
 ```
 
 Here's an example of a `shell.nix` you might want to use with this script:
@@ -70,11 +70,11 @@ env:
 
 before_install:
   - curl https://raw.githubusercontent.com/monadfix/nix-cabal/master/nix-cabal -o nix-cabal && chmod u+x nix-cabal
-  - travis_retry ./nix-cabal new-update
+  - travis_retry ./nix-cabal v2-update
 
 script:
-  - ./nix-cabal new-test
-  - ./nix-cabal new-bench
+  - ./nix-cabal v2-test
+  - ./nix-cabal v2-bench
 
 cache:
   directories:
